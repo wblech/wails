@@ -289,6 +289,12 @@ extern void didReceiveNotificationResponse(const char *jsonPayload, const char* 
     CGRect contentViewBounds = [contentView bounds];
     [self.webview setFrame:contentViewBounds];
 
+    // Ensure WKWebView reports correct devicePixelRatio on HiDPI displays.
+    // Without this, window.devicePixelRatio returns 1 on Retina displays,
+    // causing canvas-based content to render at half resolution.
+    self.webview.wantsLayer = YES;
+    self.webview.layer.contentsScale = [self.mainWindow backingScaleFactor];
+
     if (webviewIsTransparent) {
         [self.webview setValue:[NSNumber numberWithBool:!webviewIsTransparent] forKey:@"drawsBackground"];
     }
