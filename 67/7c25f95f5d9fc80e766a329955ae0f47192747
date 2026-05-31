@@ -1,0 +1,22 @@
+v2/internal/frontend/desktop/darwin/window.go
+  s_84ca6d6f86a71e::t_952f0c97532377 51-58
+  s_84ca6d6f86a71e::t_bf008a7e30d00a 72
+v2/internal/frontend/desktop/darwin/window_test.go
+  s_84ca6d6f86a71e::t_edfdae1a694ea4 1-53
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.2",
+  "base_commit_sha": "677c25f95f5d9fc80e766a329955ae0f47192747",
+  "prompts": {},
+  "sessions": {
+    "s_84ca6d6f86a71e": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "854ad413-87ca-49e8-9ec7-12b3992a3e18",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "wblech <8575320+wblech@users.noreply.github.com>"
+    }
+  }
+}
